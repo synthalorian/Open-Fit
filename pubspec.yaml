@@ -1,0 +1,88 @@
+name: open_fit
+description: "The definitive free open-source fitness app. Workouts, nutrition, glucose tracking, and more."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  
+  # Database
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  
+  # Charts
+  fl_chart: ^0.67.0
+  
+  # Navigation
+  go_router: ^14.1.4
+  
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  collection: ^1.18.0
+  path_provider: ^2.1.3
+  
+  # Barcode scanning
+  mobile_scanner: ^5.1.1
+  
+  # Camera for progress photos
+  camera: ^0.11.0
+  image_picker: ^1.1.0
+  
+  # Notifications
+  flutter_local_notifications: ^17.0.0
+  
+  # Sharing/Export
+  share_plus: ^9.0.0
+  
+  # URL Launching
+  url_launcher: ^6.3.0
+  
+  # JSON/Serialization
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+  # Code generation
+  build_runner: ^2.4.11
+  riverpod_generator: ^2.4.0
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  isar_generator: ^3.1.0+1
+  
+  # App icons
+  flutter_launcher_icons: ^0.14.2
+
+# App icon configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#0A0A1A"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+  # Custom fonts can be added later
+  # fonts:
+  #   - family: Orbitron
+  #     fonts:
+  #       - asset: assets/fonts/Orbitron-Regular.ttf

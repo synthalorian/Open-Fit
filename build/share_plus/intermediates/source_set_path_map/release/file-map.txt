@@ -1,0 +1,14 @@
+dev.fluttercommunity.plus.share.share_plus-lifecycle-runtime-2.3.1-0 /home/synth/.gradle/caches/8.10.2/transforms/1aa767ac4c54213cdca2415f401c558b/transformed/lifecycle-runtime-2.3.1/res
+dev.fluttercommunity.plus.share.share_plus-jetified-annotation-experimental-1.3.0-1 /home/synth/.gradle/caches/8.10.2/transforms/3efe2fd0c90373830e612e4eeda6af69/transformed/jetified-annotation-experimental-1.3.0/res
+dev.fluttercommunity.plus.share.share_plus-jetified-core-ktx-1.12.0-2 /home/synth/.gradle/caches/8.10.2/transforms/556ffb06e3808a114494e9ba4e944c5e/transformed/jetified-core-ktx-1.12.0/res
+dev.fluttercommunity.plus.share.share_plus-jetified-window-1.0.0-beta04-3 /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/res
+dev.fluttercommunity.plus.share.share_plus-core-1.12.0-4 /home/synth/.gradle/caches/8.10.2/transforms/a9860822821207d9e22c8bae8c6b3ffa/transformed/core-1.12.0/res
+dev.fluttercommunity.plus.share.share_plus-jetified-window-java-1.0.0-beta04-5 /home/synth/.gradle/caches/8.10.2/transforms/d96fd1477e7e934d17b82b6d6d252ab6/transformed/jetified-window-java-1.0.0-beta04/res
+dev.fluttercommunity.plus.share.share_plus-main-6 /home/synth/.pub-cache/hosted/pub.dev/share_plus-9.0.0/android/src/main/res
+dev.fluttercommunity.plus.share.share_plus-release-7 /home/synth/.pub-cache/hosted/pub.dev/share_plus-9.0.0/android/src/release/res
+dev.fluttercommunity.plus.share.share_plus-pngs-8 /home/synth/projects/open_fit/build/share_plus/generated/res/pngs/release
+dev.fluttercommunity.plus.share.share_plus-resValues-9 /home/synth/projects/open_fit/build/share_plus/generated/res/resValues/release
+dev.fluttercommunity.plus.share.share_plus-rs-10 /home/synth/projects/open_fit/build/share_plus/generated/res/rs/release
+dev.fluttercommunity.plus.share.share_plus-mergeReleaseResources-11 /home/synth/projects/open_fit/build/share_plus/intermediates/incremental/release/mergeReleaseResources/merged.dir
+dev.fluttercommunity.plus.share.share_plus-mergeReleaseResources-12 /home/synth/projects/open_fit/build/share_plus/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+dev.fluttercommunity.plus.share.share_plus-merged_res-13 /home/synth/projects/open_fit/build/share_plus/intermediates/merged_res/release

@@ -36,7 +36,6 @@ dependencies:
   mobile_scanner: ^5.1.1
   
   # Camera for progress photos
-  camera: ^0.11.0
   image_picker: ^1.1.0
   
   # Notifications
@@ -74,6 +73,7 @@ flutter_launcher_icons:
   image_path: "assets/images/app_icon.png"
   adaptive_icon_background: "#0A0A1A"
   adaptive_icon_foreground: "assets/images/app_icon.png"
+  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true

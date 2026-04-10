@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/food.dart';
 
 /// Repository interface for meals
@@ -93,5 +94,45 @@ class MealRepository implements MealRepositoryBase {
       fiber: fiber,
       water: water,
     );
+  }
+}
+
+/// Computed daily nutrition summary
+class DailyNutrition {
+  final double calories;
+  final double protein;
+  final double carbs;
+  final double fat;
+  final double fiber;
+  final double water;
+
+  DailyNutrition({
+    this.calories = 0,
+    this.protein = 0,
+    this.carbs = 0,
+    this.fat = 0,
+    this.fiber = 0,
+    this.water = 0,
+  });
+}
+
+extension MealRepoExtensions on MealRepository {
+  Future<NutritionGoals> getGoals() async {
+    final goals = await _isar.nutritionGoals.where().findFirst();
+    return goals ?? NutritionGoals();
+  }
+
+  Future<double> getWaterForDate(DateTime date) async {
+    final startOfDay = DateTime(date.year, date.month, date.day);
+    final endOfDay = startOfDay.add(const Duration(days: 1));
+    final logs = await _isar.waterLogs
+        .filter()
+        .dateBetween(startOfDay, endOfDay)
+        .findAll();
+    double total = 0;
+    for (final log in logs) {
+      total += log.amount;
+    }
+    return total;
   }
 }

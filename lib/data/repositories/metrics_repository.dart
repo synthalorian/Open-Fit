@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/body_metrics.dart';
 
 /// Repository interface for body measurements
@@ -109,5 +110,18 @@ class MetricsRepository implements MetricsRepositoryBase {
       changePercent: changePercent.toDouble(),
       days: days,
     );
+  }
+}
+
+extension MetricsRepoExtensions on MetricsRepository {
+  Future<UserProfile?> getProfile() async {
+    return await _isar.userProfiles.where().findFirst();
+  }
+
+  Future<List<BodyMeasurement>> getWeightHistory() async {
+    return await _isar.bodyMeasurements
+        .where()
+        .sortByDateDesc()
+        .findAll();
   }
 }

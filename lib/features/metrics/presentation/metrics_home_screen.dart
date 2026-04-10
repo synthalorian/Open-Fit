@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import '../../../core/theme/synthwave_theme.dart';
-import '../../../ui/widgets/shared_widgets.dart';
 
 class MetricsHomeScreen extends ConsumerWidget {
   const MetricsHomeScreen({super.key});

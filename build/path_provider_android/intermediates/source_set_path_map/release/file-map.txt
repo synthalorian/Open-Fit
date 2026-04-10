@@ -1,0 +1,12 @@
+io.flutter.plugins.pathprovider.path_provider_android-jetified-annotation-experimental-1.1.0-0 /home/synth/.gradle/caches/8.10.2/transforms/3b8bd4faa73e2901faba0b66605cec7c/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.pathprovider.path_provider_android-core-1.6.0-1 /home/synth/.gradle/caches/8.10.2/transforms/3ca42ce8bdf3a5a517a294552b82fb60/transformed/core-1.6.0/res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-1.0.0-beta04-2 /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-java-1.0.0-beta04-3 /home/synth/.gradle/caches/8.10.2/transforms/d96fd1477e7e934d17b82b6d6d252ab6/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.pathprovider.path_provider_android-main-4 /home/synth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.10/android/src/main/res
+io.flutter.plugins.pathprovider.path_provider_android-release-5 /home/synth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.10/android/src/release/res
+io.flutter.plugins.pathprovider.path_provider_android-pngs-6 /home/synth/projects/open_fit/build/path_provider_android/generated/res/pngs/release
+io.flutter.plugins.pathprovider.path_provider_android-resValues-7 /home/synth/projects/open_fit/build/path_provider_android/generated/res/resValues/release
+io.flutter.plugins.pathprovider.path_provider_android-rs-8 /home/synth/projects/open_fit/build/path_provider_android/generated/res/rs/release
+io.flutter.plugins.pathprovider.path_provider_android-mergeReleaseResources-9 /home/synth/projects/open_fit/build/path_provider_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.pathprovider.path_provider_android-mergeReleaseResources-10 /home/synth/projects/open_fit/build/path_provider_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.pathprovider.path_provider_android-merged_res-11 /home/synth/projects/open_fit/build/path_provider_android/intermediates/merged_res/release

@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/exercise.dart';
 
 /// Repository interface for exercises

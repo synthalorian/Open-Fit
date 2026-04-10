@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/workout_log.dart';
 
 /// Repository interface for workouts
@@ -116,8 +117,31 @@ class WorkoutRepository implements WorkoutRepositoryBase {
       totalWorkouts: totalWorkouts,
       totalSets: totalSets,
       totalVolume: totalVolume,
-      averageWorkoutDuration: avgDuration,
+      averageWorkoutDuration: Duration(minutes: avgDuration),
       currentStreak: currentStreak,
     );
   }
+}
+
+/// Computed workout statistics
+class WorkoutStats {
+  final int totalWorkouts;
+  final int totalSets;
+  final double totalVolume;
+  final int currentStreak;
+  final Duration? averageWorkoutDuration;
+  final DateTime? lastWorkoutDate;
+
+  WorkoutStats({
+    required this.totalWorkouts,
+    required this.totalSets,
+    required this.totalVolume,
+    required this.currentStreak,
+    this.averageWorkoutDuration,
+    this.lastWorkoutDate,
+  });
+
+  factory WorkoutStats.empty() => WorkoutStats(
+    totalWorkouts: 0, totalSets: 0, totalVolume: 0, currentStreak: 0,
+  );
 }

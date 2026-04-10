@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/glucose.dart';
 
 /// Repository interface for glucose readings

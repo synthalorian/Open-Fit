@@ -1,0 +1,389 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.synthalorian.open_fit"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package-visibility and
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:39:5-44:15
+18        <intent>
+18-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:40:9-43:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:41:13-72
+19-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:41:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:42:13-50
+21-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:42:19-48
+22        </intent>
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.VIBRATE" />
+25-->[:flutter_local_notifications] /home/synth/projects/open_fit/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-66
+25-->[:flutter_local_notifications] /home/synth/projects/open_fit/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-63
+26    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+26-->[:flutter_local_notifications] /home/synth/projects/open_fit/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-77
+26-->[:flutter_local_notifications] /home/synth/projects/open_fit/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-74
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->[:mobile_scanner] /home/synth/projects/open_fit/build/mobile_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-65
+27-->[:mobile_scanner] /home/synth/projects/open_fit/build/mobile_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-62
+28
+29    <uses-feature
+29-->[:mobile_scanner] /home/synth/projects/open_fit/build/mobile_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-13:36
+30        android:name="android.hardware.camera"
+30-->[:mobile_scanner] /home/synth/projects/open_fit/build/mobile_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-47
+31        android:required="false" />
+31-->[:mobile_scanner] /home/synth/projects/open_fit/build/mobile_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-33
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+34        android:name="com.synthalorian.open_fit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="com.synthalorian.open_fit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+37-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+38    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+39-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+39-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+40    <uses-permission android:name="android.permission.INTERNET" />
+40-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+40-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+41
+42    <application
+43        android:name="android.app.Application"
+43-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:4:9-42
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.13.1] /home/synth/.gradle/caches/8.10.2/transforms/c5dd19db10cd77d474bc17882d43a03f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:5:9-43
+46        android:label="Open Fit" >
+46-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:3:9-33
+47        <activity
+47-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:6:9-27:20
+48            android:name="com.synthalorian.open_fit.MainActivity"
+48-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:7:13-41
+49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:12:13-163
+50            android:exported="true"
+50-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:8:13-36
+51            android:hardwareAccelerated="true"
+51-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:13:13-47
+52            android:launchMode="singleTop"
+52-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:9:13-43
+53            android:taskAffinity=""
+53-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:10:13-36
+54            android:theme="@style/LaunchTheme"
+54-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:11:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:14:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:19:13-22:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:20:15-70
+65                android:resource="@style/NormalTheme" />
+65-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:21:15-52
+66
+67            <intent-filter>
+67-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:23:13-26:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:24:17-68
+68-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:24:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:25:17-76
+70-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:25:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:30:9-32:33
+78            android:name="flutterEmbedding"
+78-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:31:13-44
+79            android:value="2" />
+79-->/home/synth/projects/open_fit/android/app/src/main/AndroidManifest.xml:32:13-30
+80
+81        <provider
+81-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-19:20
+82            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+82-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-82
+83            android:authorities="com.synthalorian.open_fit.flutter.image_provider"
+83-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-74
+84            android:exported="false"
+84-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+85            android:grantUriPermissions="true" >
+85-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-47
+86            <meta-data
+86-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-18:75
+87                android:name="android.support.FILE_PROVIDER_PATHS"
+87-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-67
+88                android:resource="@xml/flutter_image_picker_file_paths" />
+88-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:18:17-72
+89        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+90        <service
+90-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-33:19
+91            android:name="com.google.android.gms.metadata.ModuleDependencies"
+91-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-78
+92            android:enabled="false"
+92-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+93            android:exported="false" >
+93-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-37
+94            <intent-filter>
+94-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-28:29
+95                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+95-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:27:17-94
+95-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:27:25-91
+96            </intent-filter>
+97
+98            <meta-data
+98-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:36
+99                android:name="photopicker_activity:0:required"
+99-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-63
+100                android:value="" />
+100-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-33
+101        </service>
+102        <!--
+103           Declares a provider which allows us to store files to share in
+104           '.../caches/share_plus' and grant the receiving action access
+105        -->
+106        <provider
+106-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-23:20
+107            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+107-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-77
+108            android:authorities="com.synthalorian.open_fit.flutter.share_provider"
+108-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-74
+109            android:exported="false"
+109-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+110            android:grantUriPermissions="true" >
+110-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-47
+111            <meta-data
+111-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-18:75
+112                android:name="android.support.FILE_PROVIDER_PATHS"
+112-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-67
+113                android:resource="@xml/flutter_share_file_paths" />
+113-->[:image_picker_android] /home/synth/projects/open_fit/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:18:17-72
+114        </provider>
+115        <!--
+116           This manifest declared broadcast receiver allows us to use an explicit
+117           Intent when creating a PendingItent to be informed of the user's choice
+118        -->
+119        <receiver
+119-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-34:20
+120            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+120-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-82
+121            android:exported="false" >
+121-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-37
+122            <intent-filter>
+122-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-33:29
+123                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+123-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-65
+123-->[:share_plus] /home/synth/projects/open_fit/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:25-62
+124            </intent-filter>
+125        </receiver>
+126
+127        <activity
+127-->[:url_launcher_android] /home/synth/projects/open_fit/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+128            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+128-->[:url_launcher_android] /home/synth/projects/open_fit/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+129            android:exported="false"
+129-->[:url_launcher_android] /home/synth/projects/open_fit/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+130            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+130-->[:url_launcher_android] /home/synth/projects/open_fit/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+131
+132        <uses-library
+132-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+133            android:name="androidx.window.extensions"
+133-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+134            android:required="false" />
+134-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+135        <uses-library
+135-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+136            android:name="androidx.window.sidecar"
+136-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+137            android:required="false" />
+137-->[androidx.window:window:1.0.0-beta04] /home/synth/.gradle/caches/8.10.2/transforms/a7ef75a1cef67577ca225557498f3b56/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+138        <!--
+139        Service for holding metadata. Cannot be instantiated.
+140        Metadata will be merged from other manifests.
+141        -->
+142        <service
+142-->[androidx.camera:camera-core:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/9d3f2189c78cbd0665306b7b134fc7a1/transformed/jetified-camera-core-1.3.3/AndroidManifest.xml:29:9-33:78
+143            android:name="androidx.camera.core.impl.MetadataHolderService"
+143-->[androidx.camera:camera-core:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/9d3f2189c78cbd0665306b7b134fc7a1/transformed/jetified-camera-core-1.3.3/AndroidManifest.xml:30:13-75
+144            android:enabled="false"
+144-->[androidx.camera:camera-core:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/9d3f2189c78cbd0665306b7b134fc7a1/transformed/jetified-camera-core-1.3.3/AndroidManifest.xml:31:13-36
+145            android:exported="false" >
+145-->[androidx.camera:camera-core:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/9d3f2189c78cbd0665306b7b134fc7a1/transformed/jetified-camera-core-1.3.3/AndroidManifest.xml:32:13-37
+146            <meta-data
+146-->[androidx.camera:camera-camera2:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/7d4a76b0b74380fc8789126ca50ce6a7/transformed/jetified-camera-camera2-1.3.3/AndroidManifest.xml:30:13-32:89
+147                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+147-->[androidx.camera:camera-camera2:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/7d4a76b0b74380fc8789126ca50ce6a7/transformed/jetified-camera-camera2-1.3.3/AndroidManifest.xml:31:17-103
+148                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+148-->[androidx.camera:camera-camera2:1.3.3] /home/synth/.gradle/caches/8.10.2/transforms/7d4a76b0b74380fc8789126ca50ce6a7/transformed/jetified-camera-camera2-1.3.3/AndroidManifest.xml:32:17-86
+149        </service>
+150        <service
+150-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
+151            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+151-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:10:13-91
+152            android:directBootAware="true"
+152-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:17:13-43
+153            android:exported="false" >
+153-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:11:13-37
+154            <meta-data
+154-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
+155                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+155-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/synth/.gradle/caches/8.10.2/transforms/0012c88486b85fac8294f290a2fdb341/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
+157            <meta-data
+157-->[com.google.mlkit:vision-common:17.3.0] /home/synth/.gradle/caches/8.10.2/transforms/59e425c82b4d3749d607077bb922c52d/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+158                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+158-->[com.google.mlkit:vision-common:17.3.0] /home/synth/.gradle/caches/8.10.2/transforms/59e425c82b4d3749d607077bb922c52d/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.mlkit:vision-common:17.3.0] /home/synth/.gradle/caches/8.10.2/transforms/59e425c82b4d3749d607077bb922c52d/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+160            <meta-data
+160-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:20:13-22:85
+161                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+161-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:21:17-120
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:22:17-82
+163        </service>
+164
+165        <provider
+165-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:9:9-13:38
+166            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+166-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:10:13-78
+167            android:authorities="com.synthalorian.open_fit.mlkitinitprovider"
+167-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:11:13-69
+168            android:exported="false"
+168-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:12:13-37
+169            android:initOrder="99" />
+169-->[com.google.mlkit:common:18.9.0] /home/synth/.gradle/caches/8.10.2/transforms/2bb73923b4a3537b5dbdd2c0c92d68de/transformed/jetified-common-18.9.0/AndroidManifest.xml:13:13-35
+170
+171        <activity
+171-->[com.google.android.gms:play-services-base:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/97ce1d46d2658c09e381db236b619ae9/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+172            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+172-->[com.google.android.gms:play-services-base:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/97ce1d46d2658c09e381db236b619ae9/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+173            android:exported="false"
+173-->[com.google.android.gms:play-services-base:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/97ce1d46d2658c09e381db236b619ae9/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->[com.google.android.gms:play-services-base:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/97ce1d46d2658c09e381db236b619ae9/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+175
+176        <meta-data
+176-->[com.google.android.gms:play-services-basement:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/db9e2b35969768e1d3f9b9ed808fae27/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+177            android:name="com.google.android.gms.version"
+177-->[com.google.android.gms:play-services-basement:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/db9e2b35969768e1d3f9b9ed808fae27/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+178            android:value="@integer/google_play_services_version" />
+178-->[com.google.android.gms:play-services-basement:18.1.0] /home/synth/.gradle/caches/8.10.2/transforms/db9e2b35969768e1d3f9b9ed808fae27/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+179
+180        <provider
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+181            android:name="androidx.startup.InitializationProvider"
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:25:13-67
+182            android:authorities="com.synthalorian.open_fit.androidx-startup"
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:26:13-68
+183            android:exported="false" >
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:27:13-37
+184            <meta-data
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+185                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+186                android:value="androidx.startup" />
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+187        </provider>
+188
+189        <receiver
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+190            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+191            android:directBootAware="false"
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+192            android:enabled="true"
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+193            android:exported="true"
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+194            android:permission="android.permission.DUMP" >
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+195            <intent-filter>
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+196                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+197            </intent-filter>
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+199                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+200            </intent-filter>
+201            <intent-filter>
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+202                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+203            </intent-filter>
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+205                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/synth/.gradle/caches/8.10.2/transforms/ab36780891e0d631c929d3885bb00153/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+206            </intent-filter>
+207        </receiver>
+208
+209        <service
+209-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+210            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+210-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+211            android:exported="false" >
+211-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+212            <meta-data
+212-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+213                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+213-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+214                android:value="cct" />
+214-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/synth/.gradle/caches/8.10.2/transforms/e67ceea46621b82d1fda6e1afc4586d5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+215        </service>
+216        <service
+216-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+217            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+217-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+218            android:exported="false"
+218-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+219            android:permission="android.permission.BIND_JOB_SERVICE" >
+219-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+220        </service>
+221
+222        <receiver
+222-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+223            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+223-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+224            android:exported="false" />
+224-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/synth/.gradle/caches/8.10.2/transforms/d254923cb5963134b064622d8d7c0d6f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+225    </application>
+226
+227</manifest>

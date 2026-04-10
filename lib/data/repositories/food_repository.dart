@@ -1,3 +1,4 @@
+import 'package:isar/isar.dart';
 import '../models/food.dart';
 
 /// Repository interface for foods

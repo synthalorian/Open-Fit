@@ -1,1 +1,47 @@
-lib/data/models/home
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+*.iml
+.idea/
+.metadata
+*.lock
+**/generated/
+**/*.g.dart
+**/*.freezed.dart
+
+# Android
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+*.hprof
+
+# macOS
+macos/Pods/
+macos/.symlinks/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+coverage/

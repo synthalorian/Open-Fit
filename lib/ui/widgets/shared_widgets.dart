@@ -26,7 +26,7 @@ class NeonCard extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [startColor.withOpacity(0.2), endColor.withOpacity(0.2)],
+              colors: [startColor.withValues(alpha: 0.2), endColor.withValues(alpha: 0.2)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -64,7 +64,7 @@ class MetricDisplay extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: color.withOpacity(0.2),
+            color: color.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Icon(icon, color: color, size: 20),
@@ -278,7 +278,7 @@ class ProgressRing extends StatelessWidget {
               CircularProgressIndicator(
                 value: progress.clamp(0.0, 1.0),
                 strokeWidth: 6,
-                backgroundColor: color.withOpacity(0.2),
+                backgroundColor: color.withValues(alpha: 0.2),
                 valueColor: AlwaysStoppedAnimation(color),
               ),
               Center(

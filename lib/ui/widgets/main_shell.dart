@@ -29,7 +29,7 @@ class MainShell extends StatelessWidget {
         selectedIndex: navigationShell.currentIndex,
         onDestinationSelected: (index) => navigationShell.goBranch(index),
         backgroundColor: SynthwaveColors.surface,
-        indicatorColor: SynthwaveColors.neonPink.withOpacity(0.3),
+        indicatorColor: SynthwaveColors.neonPink.withValues(alpha: 0.3),
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.dashboard_outlined),

@@ -1,1 +1,0 @@
- /home/synth/projects/open_fit/.dart_tool/flutter_build/6d6232a1b2a0e80c1aeac90f63e3be97/native_assets.yaml: 

@@ -69,8 +69,8 @@ class HealthHomeScreen extends ConsumerWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            SynthwaveColors.neonPurple.withOpacity(0.2),
-            SynthwaveColors.neonBlue.withOpacity(0.2),
+            SynthwaveColors.neonPurple.withValues(alpha: 0.2),
+            SynthwaveColors.neonBlue.withValues(alpha: 0.2),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
@@ -99,7 +99,7 @@ class HealthHomeScreen extends ConsumerWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: SynthwaveColors.surface.withOpacity(0.5),
+                  color: SynthwaveColors.surface.withValues(alpha: 0.5),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(Icons.show_chart, color: SynthwaveColors.neonCyan, size: 32),
@@ -161,9 +161,9 @@ class HealthHomeScreen extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: SynthwaveColors.surface.withOpacity(0.8),
+        color: SynthwaveColors.surface.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: SynthwaveColors.neonOrange.withOpacity(0.3)),
+        border: Border.all(color: SynthwaveColors.neonOrange.withValues(alpha: 0.3)),
       ),
       child: Row(
         children: [

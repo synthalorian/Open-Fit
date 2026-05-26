@@ -31,12 +31,12 @@ class SettingsScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        const Color(0xFFFFDD00).withOpacity(0.2),
-                        SynthwaveColors.neonOrange.withOpacity(0.2),
+                        const Color(0xFFFFDD00).withValues(alpha: 0.2),
+                        SynthwaveColors.neonOrange.withValues(alpha: 0.2),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: const Color(0xFFFFDD00).withOpacity(0.5)),
+                    border: Border.all(color: const Color(0xFFFFDD00).withValues(alpha: 0.5)),
                   ),
                   child: Row(
                     children: [

@@ -106,7 +106,7 @@ class _GlucoseEntryScreenState extends State<GlucoseEntryScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
-          color: isSelected ? SynthwaveColors.neonPurple.withOpacity(0.2) : SynthwaveColors.surface,
+          color: isSelected ? SynthwaveColors.neonPurple.withValues(alpha: 0.2) : SynthwaveColors.surface,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: isSelected ? SynthwaveColors.neonPurple : SynthwaveColors.gridLine,

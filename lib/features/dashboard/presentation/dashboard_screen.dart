@@ -34,7 +34,7 @@ class DashboardScreen extends ConsumerWidget {
               Text(
                 'Your health, your data, your way.',
                 style: SynthwaveTextStyles.bodyMedium(context).copyWith(
-                  color: SynthwaveColors.neonCyan.withOpacity(0.8),
+                  color: SynthwaveColors.neonCyan.withValues(alpha: 0.8),
                 ),
               ),
               const SizedBox(height: 32),
@@ -61,8 +61,8 @@ class DashboardScreen extends ConsumerWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              SynthwaveColors.neonPink.withOpacity(0.8),
-              SynthwaveColors.neonPurple.withOpacity(0.8),
+              SynthwaveColors.neonPink.withValues(alpha: 0.8),
+              SynthwaveColors.neonPurple.withValues(alpha: 0.8),
             ],
           ),
           borderRadius: BorderRadius.circular(16),

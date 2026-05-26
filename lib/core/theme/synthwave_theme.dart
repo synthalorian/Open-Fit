@@ -92,7 +92,7 @@ class SynthwaveTextStyles {
     fontFamily: bodyFont,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: SynthwaveColors.chrome.withOpacity(0.8),
+    color: SynthwaveColors.chrome.withValues(alpha: 0.8),
   );
   
   static TextStyle labelLarge(BuildContext context) => TextStyle(
@@ -157,7 +157,7 @@ class SynthwaveTheme {
         elevation: 0,
         centerTitle: true,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: SynthwaveColors.surface,
         elevation: 4,
         shape: RoundedRectangleBorder(
@@ -197,7 +197,7 @@ class SynthwaveTheme {
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: SynthwaveColors.surface,
         selectedItemColor: SynthwaveColors.neonCyan,
-        unselectedItemColor: SynthwaveColors.chrome.withOpacity(0.5),
+        unselectedItemColor: SynthwaveColors.chrome.withValues(alpha: 0.5),
         type: BottomNavigationBarType.fixed,
         elevation: 8,
       ),
@@ -216,7 +216,7 @@ class SynthwaveTheme {
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(color: SynthwaveColors.neonCyan, width: 2),
         ),
-        labelStyle: TextStyle(color: SynthwaveColors.chrome.withOpacity(0.7)),
+        labelStyle: TextStyle(color: SynthwaveColors.chrome.withValues(alpha: 0.7)),
       ),
       dividerTheme: DividerThemeData(
         color: SynthwaveColors.gridLine,
@@ -230,7 +230,7 @@ class SynthwaveTheme {
         activeTrackColor: SynthwaveColors.neonPink,
         inactiveTrackColor: SynthwaveColors.surfaceLight,
         thumbColor: SynthwaveColors.chrome,
-        overlayColor: SynthwaveColors.neonPink.withOpacity(0.2),
+        overlayColor: SynthwaveColors.neonPink.withValues(alpha: 0.2),
       ),
       chipTheme: ChipThemeData(
         backgroundColor: SynthwaveColors.surfaceLight,
@@ -289,7 +289,7 @@ class NeonGlow extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: glowColor.withOpacity(0.5),
+            color: glowColor.withValues(alpha: 0.5),
             blurRadius: blurRadius,
             spreadRadius: 2,
           ),

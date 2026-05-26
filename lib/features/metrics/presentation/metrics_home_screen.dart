@@ -66,7 +66,7 @@ class MetricsHomeScreen extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: SynthwaveColors.surface.withOpacity(0.8),
+        color: SynthwaveColors.surface.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: SynthwaveColors.gridLine),
       ),
@@ -174,7 +174,7 @@ class MetricsHomeScreen extends ConsumerWidget {
   Widget _buildMeasurementCard(BuildContext context, String label, String value) {
     return Container(
       decoration: BoxDecoration(
-        color: SynthwaveColors.surface.withOpacity(0.8),
+        color: SynthwaveColors.surface.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: SynthwaveColors.gridLine),
       ),

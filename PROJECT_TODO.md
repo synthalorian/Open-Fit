@@ -1,22 +1,32 @@
 # Project TODO
 
-- [ ] **Phase 1: Complete onboarding flow**
-  - [ ] Settings screen
-- [ ] **Cloud sync** (self-hosted option)
-- [ ] **Progress photos** with camera integration
-- [ ] **Reminders/notifications** system
+## Infrastructure (✅ Complete)
+- [x] `flutter pub get` resolves cleanly
+- [x] `dart run build_runner build` generates all 75 outputs
+- [x] `dart analyze` — 0 errors, 0 warnings
+- [x] `flutter test` — all 13 tests pass
+- [x] `flutter build apk --debug` — builds successfully
+- [x] Android Gradle Plugin upgraded to 8.3.0 (from 7.3.0)
+- [x] Kotlin upgraded to 1.9.22 (from 1.7.10)
+- [x] JVM target set to 17
+- [x] Core library desugaring enabled for flutter_local_notifications
+- [x] isar_flutter_libs namespace patch applied
+- [x] All `withOpacity` → `withValues(alpha:...)` deprecations fixed
+
+## Next Features (Future Work)
+- [ ] **Barcode scanner UI** (model done, needs wiring)
+- [ ] **Progress photos** with camera integration (image_picker dep added)
+- [ ] **Reminders/notifications** system (flutter_local_notifications dep added)
 - [ ] **Exercise history charts** per exercise
-- [ ] **Barcode scanner** UI** (model done, needs UI)
 - [ ] **Meal templates** for quick-add
-- [ ] **Insulin logging** (critical for diabetics)
-- [ ] **Medication tracking**
-- [ ] **Data export** (CSV/JSON)
-- [ ] **A1C estimation** improvements
-- [ ] **Time in range** statistics (percentage in range)
-- [ ] **Estimated A1C** with trend line
+- [ ] **Insulin / medication logging**
+- [ ] **Data export** (CSV/JSON) (share_plus dep added)
+- [ ] **Cloud sync** (optional, self-hosted)
+- [ ] **A1C estimation** improvements + trend line
+- [ ] **Time in range** statistics for glucose
+- [ ] **Dark mode improvements**
+- [ ] **Widget customization system**
 
 ---
 
-Let me know if you want me to continue with specific areas, I'm ready to help! 🎹🦞
-
-**This is the wave.** 🌉
+**This is the wave.** 🎹🦞🌆

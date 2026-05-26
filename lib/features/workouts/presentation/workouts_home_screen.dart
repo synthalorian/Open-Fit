@@ -91,7 +91,7 @@ class WorkoutsHomeScreen extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: SynthwaveColors.surface.withOpacity(0.8),
+        color: SynthwaveColors.surface.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: SynthwaveColors.gridLine),
       ),
@@ -100,7 +100,7 @@ class WorkoutsHomeScreen extends ConsumerWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.2),
+              color: SynthwaveColors.surface.withValues(alpha: 0.8),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: color),
@@ -153,9 +153,9 @@ class WorkoutsHomeScreen extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: SynthwaveColors.surface.withOpacity(0.8),
+        color: SynthwaveColors.surface.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withOpacity(0.3)),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
       ),
       child: Column(
         children: [

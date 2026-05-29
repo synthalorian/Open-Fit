@@ -29,4 +29,4 @@
 
 ---
 
-**This is the wave.** 🎹🦞🌆
+**This is the wave.** 🎹🦈🌆

@@ -104,4 +104,4 @@ flutter build apk --release  # Android
 flutter build ios --release   # iOS
 ```
 
-The foundation is solid. The app compiles and runs with the new architecture. 🎹🦞
+The foundation is solid. The app compiles and runs with the new architecture. 🎹🦈

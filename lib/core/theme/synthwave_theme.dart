@@ -50,7 +50,7 @@ class SynthwaveTextStyles {
   static const String? displayFont = null;
   static const String? bodyFont = null;
   
-  static TextStyle displayLarge(BuildContext context) => TextStyle(
+  static TextStyle displayLarge(BuildContext context) => const TextStyle(
     fontFamily: displayFont,
     fontSize: 32,
     fontWeight: FontWeight.w700,
@@ -58,7 +58,7 @@ class SynthwaveTextStyles {
     letterSpacing: 2,
   );
   
-  static TextStyle displayMedium(BuildContext context) => TextStyle(
+  static TextStyle displayMedium(BuildContext context) => const TextStyle(
     fontFamily: displayFont,
     fontSize: 24,
     fontWeight: FontWeight.w700,
@@ -66,7 +66,7 @@ class SynthwaveTextStyles {
     letterSpacing: 1.5,
   );
   
-  static TextStyle displaySmall(BuildContext context) => TextStyle(
+  static TextStyle displaySmall(BuildContext context) => const TextStyle(
     fontFamily: displayFont,
     fontSize: 18,
     fontWeight: FontWeight.w700,
@@ -74,14 +74,14 @@ class SynthwaveTextStyles {
     letterSpacing: 1,
   );
   
-  static TextStyle bodyLarge(BuildContext context) => TextStyle(
+  static TextStyle bodyLarge(BuildContext context) => const TextStyle(
     fontFamily: bodyFont,
     fontSize: 18,
     fontWeight: FontWeight.w400,
     color: SynthwaveColors.chrome,
   );
   
-  static TextStyle bodyMedium(BuildContext context) => TextStyle(
+  static TextStyle bodyMedium(BuildContext context) => const TextStyle(
     fontFamily: bodyFont,
     fontSize: 16,
     fontWeight: FontWeight.w400,
@@ -92,10 +92,10 @@ class SynthwaveTextStyles {
     fontFamily: bodyFont,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: SynthwaveColors.chrome.withValues(alpha: 0.8),
+    color: SynthwaveColors.chrome.withOpacity(0.8),
   );
   
-  static TextStyle labelLarge(BuildContext context) => TextStyle(
+  static TextStyle labelLarge(BuildContext context) => const TextStyle(
     fontFamily: bodyFont,
     fontSize: 14,
     fontWeight: FontWeight.w700,
@@ -103,7 +103,7 @@ class SynthwaveTextStyles {
     letterSpacing: 1,
   );
   
-  static TextStyle labelMedium(BuildContext context) => TextStyle(
+  static TextStyle labelMedium(BuildContext context) => const TextStyle(
     fontFamily: bodyFont,
     fontSize: 12,
     fontWeight: FontWeight.w700,

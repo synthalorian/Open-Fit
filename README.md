@@ -91,7 +91,7 @@ lib/
 
 ---
 
-Built with ❤️ by **synth** ([synthalorian](https://github.com/synthalorian)) with assistance from **synthclaw** 🎹🦞
+Built with ❤️ by **synthalorian 🎹🤺** ([synthalorian](https://github.com/synthalorian)) with assistance from **synthclaw** 🎹🦞
 
 ---
 

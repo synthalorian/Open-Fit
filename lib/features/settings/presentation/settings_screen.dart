@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../../core/theme/app_themes.dart';
 import '../../../core/theme/synthwave_theme.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
   Future<void> _launchUrl(String url) async {
@@ -13,7 +15,8 @@ class SettingsScreen extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final currentTheme = ref.watch(themeProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('SETTINGS'),
@@ -69,7 +72,8 @@ class SettingsScreen extends StatelessWidget {
           ]),
           _buildSection(context, 'PREFERENCES', [
             _buildSettingTile(context, 'Units', 'Metric (kg, cm)', Icons.straighten),
-            _buildSettingTile(context, 'Theme', 'Neon Night (Dark)', Icons.palette),
+            _buildSettingTile(context, 'Theme', currentTheme.label, Icons.palette,
+                onTap: () => _showThemePicker(context, ref, currentTheme)),
           ]),
           _buildSection(context, 'DATA', [
             _buildSettingTile(context, 'Export Data', 'CSV / JSON', Icons.download),
@@ -86,6 +90,39 @@ class SettingsScreen extends StatelessWidget {
             _buildSettingTile(context, 'Version', '1.0.0', Icons.info_outline),
             _buildSettingTile(context, 'Licenses', 'MIT License', Icons.gavel),
           ]),
+        ],
+      ),
+    );
+  }
+
+  void _showThemePicker(
+      BuildContext context, WidgetRef ref, AppThemeName current) {
+    showDialog(
+      context: context,
+      builder: (dialogContext) => SimpleDialog(
+        title: const Text('SELECT THEME'),
+        children: [
+          for (final theme in AppThemeName.values)
+            SimpleDialogOption(
+              onPressed: () {
+                ref.read(themeProvider.notifier).setTheme(theme);
+                Navigator.pop(dialogContext);
+              },
+              child: Row(
+                children: [
+                  Icon(
+                    theme == current
+                        ? Icons.radio_button_checked
+                        : Icons.radio_button_off,
+                    color: theme == current
+                        ? Theme.of(dialogContext).colorScheme.primary
+                        : SynthwaveColors.chrome,
+                  ),
+                  const SizedBox(width: 12),
+                  Text(theme.label),
+                ],
+              ),
+            ),
         ],
       ),
     );

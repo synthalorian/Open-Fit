@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/router/app_router.dart';
-import 'core/theme/synthwave_theme.dart';
+import 'core/theme/app_themes.dart';
 import 'data/services/database_service.dart';
 
 Future<void> main() async {
@@ -17,15 +17,16 @@ Future<void> main() async {
   );
 }
 
-class OpenFitApp extends StatelessWidget {
+class OpenFitApp extends ConsumerWidget {
   const OpenFitApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = ref.watch(themeProvider);
     return MaterialApp.router(
       title: 'Open Fit',
       debugShowCheckedModeBanner: false,
-      theme: SynthwaveTheme.dark,
+      theme: theme.themeData,
       routerConfig: routerConfig,
       builder: (context, child) {
         // Add global error handling

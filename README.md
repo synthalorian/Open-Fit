@@ -91,7 +91,7 @@ lib/
 
 ---
 
-Built with ❤️ by **synth** with assistance from **synthclaw** 🎹🦞
+Built with ❤️ by **synth** with assistance from **blackclaw** ⚫🦞
 
 ---
 

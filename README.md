@@ -1,3 +1,5 @@
+![Open-Fit](.github/preview.png)
+
 # Open Fit - v2.0 Architecture
 
 ## Overview

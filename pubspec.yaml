@@ -42,7 +42,7 @@ dependencies:
   flutter_local_notifications: ^17.0.0
   
   # Sharing/Export
-  share_plus: ^9.0.0
+  share_plus: ^13.3.1
   
   # URL Launching
   url_launcher: ^6.3.0
